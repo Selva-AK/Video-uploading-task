@@ -1,0 +1,370 @@
+body{
+    background-color:azure;
+}
+.header{
+    background-color: black;
+    color:white;
+    width:100%;
+    padding: 20px 0px 20px 100px;
+}
+.header h1{
+    font-size: 3pc;
+}
+.header h2{
+    font-size: 1.5pc;
+}
+.header button{
+    padding: 10px 70px 10px 70px;
+    background-color:darkblue;
+    border-radius: 30px;
+    margin-left: 50px;
+    color: white;
+    font-weight: 700;
+    transition: transform .5s;
+}
+.header button:hover{
+    transform: scale(1.15);
+    background-color: white;
+    color: darkblue;
+    border: 3px solid darkblue;
+}
+.freestyle-img img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:7%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    border-radius: 50%;
+}
+.freestyle-img1 img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:7%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    border-radius: 50%;
+}
+.row {
+    display: flex;
+}
+.column{
+    flex: 60%;
+    padding: 10px;
+    height: 800px;
+}
+.column-img1{
+    flex: 20%;
+    padding: 5px;
+    height: 800px;
+}
+
+.column-img1 img{
+    width:80%;
+    border-radius: 20px;
+    transition: transform .5s;
+
+}
+.column-img2{
+    flex: 20%;
+    padding: 5px;
+    height: 800px;
+}
+.column-img2 img{
+    width:90%;
+    border-radius: 20px;
+    padding-top: 300px;
+    transition: transform .5s;
+}
+.column-img1 img:hover{
+    transform: scale(1.15);
+}
+.column-img2 img:hover{
+    transform: scale(1.15);
+}
+.explore-btn button{
+    padding: 10px 70px 10px 70px;
+    background-color:darkblue;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    transition: transform .5s;
+}
+.explore-btn button:hover{
+    transform: scale(1.15);
+    color: darkblue;
+    border: 3px solid darkblue;
+    background-color: white;
+}
+.fast-fact{
+    color:darkblue;
+}
+.column-left {
+    flex: 50%;
+    padding-left: 300px;
+    height: 800px;
+}
+.column-left h1{
+    color:darkblue;
+}
+.column-right{
+    flex: 50%;
+    padding-left: 100px;
+    height: 800px;
+}
+.column-right img{
+    margin-right: 0%;
+    margin-left: 60%;
+}
+.col-container {
+    display: table;
+    width: 100%;
+    height: 300px;
+}
+.col{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    background-color: white;
+    border-radius: 20px;
+}
+.col img{
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.freestyle-img1 img{
+    width: 30%;
+    margin-right: 0%;
+    margin-left: 100%;
+    border-radius: 50%;
+}
+.col-container1 {
+    display: table;
+    width: 100%;
+    height: 600px;
+}
+.col1{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    background:url("../public/img/India.png");
+    background-size: cover;
+
+}
+.col2{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    background:url("../public/img/paisatower.jpg");
+    background-size: cover;
+
+}
+.col3{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    background:url("../public/img/Tajmahal.jpg");
+    background-size: cover;
+
+}
+
+.col4{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    background:url("../public/img/rioChris.jpg");
+    background-size: cover;
+}
+.col-container1 button{
+    margin-top: 570px;
+    margin-bottom: 0px;
+}
+.col-container-flag {
+    display: table;
+    width: 100%;
+    height: 300px;
+}
+.col-f{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    border-radius: 20px;
+}
+.col-f img{
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.background-white{
+    background-color: white;
+    padding: 10px;
+    width:300px;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.down-arrow{
+    text-align: center;
+}
+.down-arrow img{
+    height: 100px;
+}
+table tr{
+    padding: 30px;
+}
+.column-left1{
+    display: table-cell;
+}
+.column-right1{
+    display: table-cell;
+}
+.col-container-tbl{
+    display: table;
+    width: 100%;
+    height: 200px;
+}
+.col-tbl{
+    text-align: center;
+    display: table-cell;
+    padding: 16px;
+    border-radius: 20px;
+}
+.col-tbl img{
+    height: 50px;
+}
+table td{
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.col-img img{
+    height:950px;
+    width:auto;
+}
+center img{
+    border-radius: 50%;
+}
+/* *{
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+}  
+.row-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column-img {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column-img img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    } */
+/* } */
+.img-border{
+    background-color:white;
+}
+.img-border img{
+    border:6px solid white;
+}
+.row-reg {
+    display: grid;
+    grid-template-columns: 700px 500px;
+}
+.column-reg {
+    padding: 1px;
+    height: 250px;
+}
+.column-reg1 {
+    padding: 1px;
+    height: 250 px;
+}
+form input{
+    border: none;
+}
+.dragNdrop{
+    background-color: white;
+    border: 2px dashed black;
+    height: 280px;
+    width: 80%;
+}
+.dragNdrop label{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 40px;
+    padding-left: 80px;
+}
+.body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.drag-drop-container {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+}
+.onhover{
+    border: 2px dashed green;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+.onover{
+    border: 2px dashed red;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+form p{
+    color: red;
+}
+.homebtn button:hover{
+    color:green;
+    border: 2px solid green;
+}
+.flex-cls{
+    display: flex;
+}
+.flex-col{
+    flex:50%;
+}
+.flex-col input{
+    font-size: 25px;
+    padding: 10px;
+    width: 80%;
+}

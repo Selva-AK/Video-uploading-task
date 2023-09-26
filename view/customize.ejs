@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="../public/dashboard.css">
+    <script src="../view/dashboard.js"></script>
+    <script src="../view/pageload.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <h1>Customize</h1>
+    </div>
+    <div class="col-container">
+        <div class="col">
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="/">Home</a>
+                <a href="/customize">Customize</a>
+                <a href="/table">Table</a>
+                <a href="/result">View Records</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="col"><br><br>
+            <form action="/dbaction" method="post">
+                <table>
+                    <tr>
+                        <th>Field type</th>
+                        <th>Mandatory</th>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Placeholder</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="fields" id="fields" required>
+                                <option value="checkbox">checkbox</option>
+                                <option value="date">date</option>
+                                <option value="email">email</option>
+                                <option value="file">file</option>
+                                <option value="password">password</option>
+                                <option value="radio">radio</option>
+                                <option value="tel">tel</option>
+                                <option value="text">text</option>
+                                <option value="time">time</option>
+                                <option value="url">url</option>
+                                <option value="week">week</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="Mandatory" id="Mandatory" required>
+                                <option value="required">Yes</option>
+                                <option value="not required">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="name" required>
+                        </td>
+                        <td>
+                            <input type="text" name="id" id="id" required>
+                        </td>
+                        <td>
+                            <input type="text" name="placeholder" id="plceholder" >
+                        </td>
+                    </tr>
+                </table><br>
+                <input type="submit" value="Add row">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

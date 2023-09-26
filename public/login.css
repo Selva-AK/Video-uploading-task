@@ -1,0 +1,55 @@
+
+.header{
+    font-size:3pc;
+    padding:20px;
+}
+span img{
+    width:10%;
+    padding:20px;
+}
+table{
+    background-color:darkgray;
+    padding: 20px;
+    font-size:2pc;
+    border-radius: 10px;
+    border:2px solid black;
+}
+table:hover{
+    background:linear-gradient(gray,white);
+    border:2px solid white;
+}
+table input{
+    font-size: 2pc;
+}
+td{
+    padding:20px;
+}
+table input[type="submit"]:hover,table input[type="reset"]:hover{
+    color:white;
+    background-color: black;
+}
+table a,table span{
+    font-size:large;
+}
+table a{
+    float: right;
+}
+.info{
+    color:red;
+}
+@media screen and (max-width : 900px){
+    table, table input {
+        font-size: 1pc;
+      }
+      td{
+          padding: 5px;
+      }
+}
+@media screen and (max-height : 700px){
+    table, table input {
+        font-size: 1pc;
+      }
+      td{
+          padding: 5px;
+      }
+}

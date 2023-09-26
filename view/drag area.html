@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #0fb8ac;
+    }
+    .drag-area {
+      border: 2px dashed #fff;
+      height: 150px;
+      width: 250px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .drag-area.active {
+      border: 2px solid #fff;
+    }
+    .drag-area .icon {
+      font-size: 40px;
+      color: #fff;
+    }
+    .drag-area header {
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      margin: 6px 0;
+    }
+    .drag-area h6 {
+      font-size: 12px;
+      font-weight: 500;
+      color: #fff;
+      margin: 3px 0;
+    }
+    .drag-area button {
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      border: none;
+      outline: none;
+      background: #fff;
+      color: #0fb8ac;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .drag-area img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    // JavaScript code remains the same
+  </script>
+</head>
+<body>
+  <div class="drag-area">
+    <div class="icon"><i class="fas fa-cloud-upload"></i></div>
+    <h6>Drag & Drop to Upload File</h6>
+    <h6>OR</h6>
+    <button>Browse File</button>
+    <input type="file" hidden>
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    background-color: azure;
+    font-family: sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.free-style-img img {
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 40px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid lightcoral;
+}
+
+table td {
+    padding: 20px;
+    font-size: 15px;
+    border: 2px solid lightblue;
+}
+
+td {
+    transition: transform .5s;
+}
+
+td:hover {
+    border-radius: 20px;
+    transform: scale(.8);
+}
+
+table,
+a {
+    color: black;
+}
+
+.logout a {
+    text-decoration: none;
+}
+
+.logout button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px 70px 10px 70px;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    transition: transform .5s;
+    font-size: large;
+}
+
+.logout button:hover {
+    transform: scale(1.15);
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+}

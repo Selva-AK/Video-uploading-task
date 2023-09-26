@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>view</title>
+    <link rel="stylesheet" href="../public/view.css">
+    <script src="../view/view.js"></script>
+    <script src="../view/pageload.js"></script>
+
+</head>
+
+<body>
+    <div class="free-style-img">
+        <img src="../public/img/freeStyle.png" alt="freeStyle">
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/customize">Customize</a>
+        <a href="/table">Table</a>
+        <a href="/result">View Records</a>
+        <a href="/logout">Logout</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776; Navbar</span><br><br><br>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Text</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Telephone</th>
+            <th>Time</th>
+            <th>url</th>
+            <th>Week</th>
+            <th>Checkbox</th>
+            <th>Radiobox</th>
+            <th>Date</th>
+            <th>Video</th>
+            <th>Action</th>
+            <th>Action</th>
+        </tr>
+        <% data.forEach(item=> { %>
+            <tr>
+                <td>
+                    <%= item.ID %>
+                </td>
+                <td>
+                    <%= item.text %>
+                </td>
+                <td>
+                    <%= item.email %>
+                </td>
+                <td>
+                    <%= item.password %>
+                </td>
+                <td>
+                    <%= item.tel %>
+                </td>
+                <td>
+                    <%= item.time %>
+                </td>
+                <td>
+                    <%= item.url %>
+                </td>
+                <td>
+                    <%= item.week %>
+                </td>
+                <td>
+                    <%= item.checkbox %>
+                </td>
+                <td>
+                    <%= item.radiobox %>
+                </td>
+                <td>
+                    <%= item.date %>
+                </td>
+                <td>
+                    <%= item.video %>
+                </td>
+                <td>
+                    <a href="/play?id=<%=item.ID%>" name="play" id="<%=item.ID%>">play</a>
+                    <hr>
+                    <a href="/download?id=<%=item.ID%>" name="download" id="<%=item.ID%>">download</a>
+                </td>
+                <td>
+                    <a href="/delresult?id=<%=item.ID %>">Delete</a>
+                    <hr>
+                    <a href="/uptresult?id=<%=item.ID %>">Update</a>
+                </td>
+            </tr>
+            <% }); %>
+    </table><br><br><br>
+    <div class="logout">
+        <table>
+            <tr>
+                <td><a href="/"><button class="homebtn">Home</button></a></td>
+                <td> <a href="/logout"><button>Logout</button></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

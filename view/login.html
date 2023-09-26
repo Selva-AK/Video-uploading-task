@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="public/login.css">
+    <script src="../view/pageload.js"></script>
+
+    <style>
+        body{
+            background-image: url("public/bg-img.jpg");
+            background-size: cover;
+        }
+    </style>
+    <script text="type/javascript">
+        function Validate(){
+            var email=document.forms["myform"]["email"].value;
+            var password=document.forms["myform"]["password"].value;
+            var info=document.getElementById('info');
+            var info1=document.getElementById('info1');
+            if (email.indexOf("@") <= 0) {
+                info.innerHTML="Enter Valid Email";
+                document.getElementById('email').style.border="2px solid red";
+                return false;
+            }
+            else if (email.charAt(email.length - 4) != "." && email.charAt(email.length - 3) != ".") {
+                info.innerHTML="Enter Valid Email";
+                document.getElementById('email').style.border="2px solid red";
+                return false;
+            }
+            else {
+                info.innerHTML="";
+                document.getElementById('email').style.border="2px solid green";
+            }
+
+            if(!password.match(/^[a-zA-Z0-9]+$/)){
+                console.log("e");
+                document.getElementById('password').style.border="2px solid green";
+                info1.innerHTML=" ";
+            }
+            else {
+                document.getElementById('password').style.border="2px solid red";
+                info1.innerHTML="Password must be more than 8 characters with atleast one number,uppercase,lowercase and speacial character";
+                return false;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <div class="header">
+        ADMIN LOGIN
+    </div>
+    <span><img src="public/img/profile.png" alt="avatar"></span>
+    <form action="http://localhost:3000/loginprocess" name="myform" method="post" onsubmit="return Validate()">
+    <table>
+        <tr><td>Email ID</td><td><input type="email" name="email" id="email" placeholder="Enter your Email ID" required onkeyup="Validate();"></td></tr>
+        <tr><td>Password</td><td><input type="password" name="password" id="password" placeholder="Enter your Password" maxlength="20" required onkeyup="Validate();"></td></tr>
+        <tr><td><input type="submit" value="Login"></td> <td><input type="reset" value="Reset"></td></tr>
+        <tr><td><span><input type="checkbox" name="" id=""> Remember me</span></td><td><a href="#">Forget Password ?</a></td></tr>
+    </table>
+    </form>
+    </div>
+    <br>
+    <span id="info" class="info"></span>
+    <span id="info1" class="info"></span>
+    <h3>Don't have Account ? goto <a href="#">Signin</a></h3>
+
+    </center>
+</body>
+</html>
